@@ -5,7 +5,7 @@ const cors = require("cors");
 const stripe = require("stripe")(
 	"sk_test_51N6CbDE8RMt6RxLnNusCD8xkI1uLL9NatqhvAOWdeb4JKT8DtxtpCEuOWFODGq2bKsloDTZKjZo6UQqDvJSSM5eh001Fs2qe8w"
 );
-const corsOptions = require("./corsOptions");
+const corsOptions = require("./config/corsOptions");
 
 const app = express();
 app.use(cors(corsOptions));
