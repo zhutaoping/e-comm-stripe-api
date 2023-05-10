@@ -1,3 +1,4 @@
+// whitelist of allowed origins
 const allowedOrigins = [
 	"https://e-commerce-site-hazel.vercel.app",
 	"http://localhost:3000",
