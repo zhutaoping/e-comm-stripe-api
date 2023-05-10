@@ -1,5 +1,5 @@
 const allowedOrigins = [
-	"https://e-commerce-site-nu.vercel.app",
+	"https://e-commerce-site-hazel.vercel.app",
 	"http://localhost:3000",
 ];
 
