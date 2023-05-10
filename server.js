@@ -44,8 +44,8 @@ app.post("/checkout", async (req, res) => {
 		// payment_method_types: ["card"],
 		line_items: lineItems,
 		mode: "payment",
-		success_url: "https://e-commerce-site-nu.vercel.app/success",
-		cancel_url: "https://e-commerce-site-nu.vercel.app/cancel",
+		success_url: "https://e-commerce-site-hazel.vercel.app/success",
+		cancel_url: "https://e-commerce-site-hazel.vercel.app/cancel",
 	});
 
 	res.send(JSON.stringify({ url: session.url }));
