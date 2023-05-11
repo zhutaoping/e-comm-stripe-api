@@ -34,6 +34,7 @@ app.post("/checkout", async (req, res) => {
 		cancel_url: `${BASE_URL}/cancel`,
 	});
 
+	console.log("session", session);
 	res.send(JSON.stringify({ url: session.url }));
 });
 
