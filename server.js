@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.post("/checkout", async (req, res) => {
-	// console.log("req.body", req.body);
+	console.log("req.body", req.body);
 
 	const items = req.body.items;
 	let lineItems = [];
