@@ -30,10 +30,10 @@ app.post("/checkout", async (req, res) => {
 		// payment_method_types: ["card"],
 		line_items: lineItems,
 		mode: "payment",
-		success_url: `https://e-commerce-site-hazel.vercel.app/success`,
+		success_url: `${BASE_URL}/success`,
 		cancel_url: `${BASE_URL}/cancel`,
 	});
-
+	console.log("node_env", process.env.NODE_ENV);
 	console.log("session", session);
 	res.send(JSON.stringify({ url: session.url }));
 });
